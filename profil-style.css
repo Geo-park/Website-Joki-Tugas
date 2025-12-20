@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(36, 41, 46);
+  color: white;
+  min-height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgb(15, 15, 27);
+    color: white;
+    padding: 15px 75px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.navbar .navbar-logo h1 {
+    font-size:35px;
+    color: rgb(106, 255, 72);
+}
+.navbar .navbar-logo .tec {
+    color: #ff4d4d;
+    font-size: 35px;
+}
+.navbar ul{
+    list-style: none;
+    gap: 30px;
+    display: flex;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+    position: relative;
+}
+.navbar ul li a:hover {
+  color: darkgoldenrod;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(50, 135, 31);
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.login-btn:hover {
+  background-color: rgb(40, 120, 25);
+}
+
+/* Profil Container */
+.profil-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.profil-box {
+  background-color: rgb(28, 32, 37);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.profil-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid rgb(50, 135, 31);
+}
+
+h1 {
+  font-size: 28px;
+  color: rgb(92, 255, 56);
+}
+.tuf {
+  color: #ff4d4d;
+}
+
+.tagline {
+  font-style: italic;
+  color: rgb(150, 160, 170);
+  margin-bottom: 15px;
+}
+
+.deskripsi {
+  font-size: 16px;
+  color: rgb(200, 200, 200);
+  margin-bottom: 20px;
+}
+
+.info-kontak p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+.avatar {
+  width: 40px;       
+  height: 40px;       
+  border-radius: 50%; 
+  object-fit: cover;  
+  border: 2px solid white; 
+}
+.faq-item {
+   margin: 6px 0;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+
+@media (max-width: 480px) {
+    .wraper {
+        width: 90%;
+        padding: 25px;
+    }
+}

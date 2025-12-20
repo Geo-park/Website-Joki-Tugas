@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(36, 41, 46);
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(15, 15, 27);
+  color: white;
+  padding: 15px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  font-size: 28px;
+  color: rgb(97, 255, 61);
+}
+.navbar-logo .tec {
+  color: #ff4d4d;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.navbar ul li a.aktif {
+  color: chartreuse;
+  font-weight: 600;
+}
+.navbar ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-color: darkgoldenrod;
+    transition: 0.3s ease;
+}
+.navbar ul li a:hover {
+    color: darkgoldenrod;
+}
+
+.layanan-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.layanan-container h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: chartreuse;
+}
+
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.layanan-card {
+  background-color: rgb(28, 32, 37);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.layanan-card:hover {
+  transform: translateY(-5px);
+  background-color: rgb(38, 44, 50);
+}
+
+.layanan-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: chartreuse;
+}
+
+.layanan-card p {
+  font-size: 15px;
+  color: rgb(200, 200, 200);
+}
+
+@media (max-width: 600px) {
+  .layanan-container h2 {
+    font-size: 28px;
+  }
+}
+
+.layanan-card .harga {
+  font-weight: bold;
+  color: chartreuse;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.layanan-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: chartreuse;
+  color: rgb(28, 32, 37);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.layanan-card button:hover {
+  background-color: limegreen;
+  color: white;
+}
+.avatar {
+  width: 40px;       
+  height: 40px;       
+  border-radius: 50%; 
+  object-fit: cover;  
+  border: 2px solid white; 
+}

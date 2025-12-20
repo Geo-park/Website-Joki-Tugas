@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(36, 41, 46);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: rgb(15, 15, 27);
+  color: white;
+  padding: 15px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  font-size: 28px;
+  color: rgb(99, 255, 64);
+}
+.navbar-logo .tec {
+  color: #ff4d4d;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: darkgoldenrod;
+}
+
+.kontak-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: rgb(28, 32, 37);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.kontak-container:hover {
+  transform: translateY(-4px);
+}
+
+.kontak-container h2 {
+  font-size: 28px;
+  color: chartreuse;
+  margin-bottom: 10px;
+}
+
+.kontak-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: rgb(170, 170, 170);
+  line-height: 1.5;
+}
+
+.form-kontak {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-kontak label {
+  font-size: 15px;
+  color: white;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(70, 70, 70);
+  background-color: rgb(43, 49, 54);
+  color: white;
+  font-size: 14px;
+}
+
+.form-kontak input:focus,
+.form-kontak textarea:focus {
+  border-color: chartreuse;
+  background-color: rgb(53, 59, 66);
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-kontak button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: chartreuse;
+  color: rgb(28, 32, 37);
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-kontak button:hover {
+  background-color: limegreen;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .kontak-container {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+}
+.avatar {
+  width: 40px;
+  height: 40px; /* ini tadi kosong, perlu diisi */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(9, 9, 56);
+}
