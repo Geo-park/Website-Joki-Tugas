@@ -1,132 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
+/* ===== BACKGROUND ===== */
 body {
   background-color: rgb(36, 41, 46);
-  color: white;
-  min-height: 100vh;
+  background-image: url(Background3.png);
 }
 
-.navbar{
-    width: 100%;
-    background-color: rgb(15, 15, 27);
-    color: white;
-    padding: 15px 75px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-.navbar .navbar-logo h1 {
-    font-size:35px;
-    color: rgb(106, 255, 72);
-}
-.navbar .navbar-logo .tec {
-    color: #ff4d4d;
-    font-size: 35px;
-}
-.navbar ul{
-    list-style: none;
-    gap: 30px;
-    display: flex;
-}
-.navbar ul li{
-    position: relative;
-}
-.navbar ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    transition: 0.3s ease;
-    position: relative;
-}
-.navbar ul li a:hover {
-  color: darkgoldenrod;
-}
-
-.login-btn {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(50, 135, 31);
-  padding: 8px 15px;
-  border-radius: 4px;
-  transition: 0.3s ease;
-}
-.login-btn:hover {
-  background-color: rgb(40, 120, 25);
-}
-
-/* Profil Container */
+/* ===== PROFIL CONTAINER ===== */
 .profil-container {
   max-width: 600px;
   width: 100%;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
+  margin: 0 auto; /* center horizontal */
+  display:grid;
+  justify-content: center; /* center horizontal isi */
+  align-items: center; /* center vertikal isi */
+  padding-top: 80px;
+  gap: calc(30px);
 }
 
+
+/* ===== BOX PROFIL ===== */
 .profil-box {
   background-color: rgb(28, 32, 37);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
 }
 
+/* ===== FOTO PROFIL ===== */
 .profil-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid rgb(50, 135, 31);
+  border: 3px solid #0a160f;
+  aspect-ratio: 1 / 1;
 }
 
+/* ===== JUDUL ===== */
 h1 {
   font-size: 28px;
   color: rgb(92, 255, 56);
+  margin-bottom: 5px;
 }
+
 .tuf {
   color: #ff4d4d;
 }
 
+/* ===== TAGLINE ===== */
 .tagline {
   font-style: italic;
   color: rgb(150, 160, 170);
   margin-bottom: 15px;
 }
 
+/* ===== DESKRIPSI ===== */
 .deskripsi {
   font-size: 16px;
-  color: rgb(200, 200, 200);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.info-kontak p {
+/* ===== INFO KONTAK ===== */
+.profil-container p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+
+/* ===== FAQ ===== */
+.faq h1 {
+  margin-bottom: 15px;
+}
+
+.faq h3 {
+  color: rgb(92, 255, 56);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.faq-item {
   margin: 6px 0;
   font-size: 15px;
   color: rgb(180, 180, 180);
 }
-.avatar {
-  width: 40px;       
-  height: 40px;       
-  border-radius: 50%; 
-  object-fit: cover;  
-  border: 2px solid white; 
-}
-.faq-item {
-   margin: 6px 0;
-  font-size: 15px;
-  color: rgb(180, 180, 180);
-}
 
+/* ===== RESPONSIVE HP ===== */
 @media (max-width: 480px) {
-    .wraper {
-        width: 90%;
-        padding: 25px;
-    }
+  .profil-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .deskripsi {
+    font-size: 14px;
+  }
 }

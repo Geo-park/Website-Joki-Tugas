@@ -5,27 +5,40 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.navbar{
+
+.navbar {
+    position: fixed;
     width: 100%;
-    background-color: rgb(15, 15, 27);
-    color: white;
-    padding: 15px 75px;
-    display: flex;
+    background-color: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px); 
+    color:#e2e8f0;
+    padding: 5px 20px;
+    display:flex;
     justify-content:space-between;
     align-items: center;
+    margin-top: 0%;
+    
 }
+
 .navbar .navbar-logo h1 {
     font-size:35px;
-    color: rgb(106, 255, 72);
+    
+}
+.navbar-logo  a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 700;
 }
 .navbar .navbar-logo .tec {
-    color: #ff4d4d;
+    color: #22c55e;
     font-size: 35px;
 }
 .navbar ul{
     list-style: none;
     gap: 30px;
     display: flex;
+    align-items: center;
 }
 .navbar ul li{
     position: relative;
@@ -33,97 +46,60 @@
 .navbar ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: white;
-    transition: 0.3s ease;
+    color:  #cbd5e1;
     position: relative;
 }
-.button{
-     padding: 5px 15px;
-  background-color: #b6ff27; 
-  color: black;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.button:hover {
-  color: rgb(105, 105, 105);
-  background-color: rgb(9, 9, 56);
-}
-.p {
-  color: rgb(18, 16, 16);
-  border: 2px solid #6f5fa9;
-  padding: 5px 15px;
-  border-radius: 8px;
-  outline: none;
-}
 
-.p::placeholder {
-  color: white;
-  opacity: 0.7;
-}
-
-.navbar ul li a::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: darkgoldenrod;
-    transition: width 0.3s ease;
-}
 .navbar ul li a:hover {
-    color: darkgoldenrod;
+    color: #38bdf8;
+    text-decoration:overline;
 }
 /* css home */ 
 .home {
+    padding-top: 90px;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-image:url(Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 .home .isi{
     padding: 1.4rem 7%;
     max-width: 50rem;
+    color:  #e2e8f0;
+    text-align: center;
+    
 }
-.isi h1{
+span{
+     color: #22c55e;
+}
+.isi h3{
     margin-top: 1rem;
     font-size: 45px;
-    color: white;
+    color: #38bdf8;
+
 }
 .isi a {
     text-decoration: none;
 }
-.isi p{
-    font-size: 18px;
-    color: white;
-    font-weight: 100;
-}
+
 .isi .cta{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: inline-block;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 1.1rem;
     color: white;
-    background-color: darkblue;
-    border-radius: 0.2rem;
+    background-color: #22c55e;
+    border-radius: 6px;
+    
 }
 .isi .cta:hover {
-    color: rgb(105, 105, 105);
-    background-color: rgb(9, 9, 56);
-}
-
-.avatar {
-  width: 40px;       
-  height: 40px;       
-  border-radius: 50%; 
-  object-fit: cover;  
-  border: 2px solid rgb(9, 9, 56); 
+    color: rgb(0, 0, 0);
+    background-color: rgb(9, 56, 26);
 }
 
 @media (max-width: 480px) {

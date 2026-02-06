@@ -1,64 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   background-color: rgb(36, 41, 46);
-  color: white;
-}
-
-.navbar {
-  width: 100%;
-  background-color: rgb(15, 15, 27);
-  color: white;
-  padding: 15px 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-logo h1 {
-  font-size: 28px;
-  color: rgb(97, 255, 61);
-}
-.navbar-logo .tec {
-  color: #ff4d4d;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-.navbar ul li a.aktif {
-  color: chartreuse;
-  font-weight: 600;
-}
-.navbar ul li a::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    background-color: darkgoldenrod;
-    transition: 0.3s ease;
-}
-.navbar ul li a:hover {
-    color: darkgoldenrod;
+  background-image: url(Background2.png);
 }
 
 .layanan-container {
-  padding: 50px 20px;
+  padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
@@ -82,11 +28,12 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  height: 100%;
 }
 
 .layanan-card:hover {
   transform: translateY(-5px);
-  background-color: rgb(38, 44, 50);
+  background-color: rgb(84, 88, 92);
 }
 
 .layanan-card h3 {
@@ -123,10 +70,14 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: auto;
+}
+.layanan-card button a{
+  text-decoration: none;
 }
 
 .layanan-card button:hover {
-  background-color: limegreen;
+  background-color: rgb(24, 98, 24);
   color: white;
 }
 .avatar {
