@@ -1,26 +1,138 @@
 <!DOCTYPE html>
-<head>
-    <title>Joki Tugas</title>
-    <link rel="stylesheet" href="style navbar.css">
-    <link rel="icon" href="icon.png">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <h1><a href="index.html">TUGASIN<span class="tec"> AJA</span></a></h1>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TugasIn Aja</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-home">
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">TJ</span>
+          TugasIn Aja
+        </a>
+        <nav class="nav-links">
+          <a class="active" href="index.html">Beranda</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="profil.html">Profil</a>
+          <a href="hubungi.html">Hubungi</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="https://wa.me/6283866273495?text=Halo%2C%20saya%20mau%20order%20tugas" target="_blank">Order Sekarang</a>
         </div>
-        <ul>
-            <li><a href="index.html">BERANDA</a></li>
-            <li><a href="Profil.html">PROFIL</a></li>
-              <li><a href="Hubungi Kami.html">HUBUNGI KAMI</a></li>
-        </ul>
-    </nav>
-    <nav class="home">
-        <main class="isi">Kewalahan dengan tugas dan deadline?. Serahkan pada kami. Pengerjaan cepat, hasil rapi, dan dijamin aman.
-            <h3><span>Fokus Masa Depanmu,</span> Tugas Biar Kami yang Urus</h3>
-            <p>Kami membantu menyelesaikan berbagai tugas sekolah dan kuliah dengan kualitas terbaik agar kamu bisa tetap tenang dan nilai tetap aman.</p><br>
-            <a href="Pesan.html" class="cta">LAYANAN JASA</a>
-        </main>
-    </nav>
-</body>
+        <button class="mobile-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      </div>
+      <nav class="mobile-menu">
+        <a href="index.html">Beranda</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="profil.html">Profil</a>
+        <a href="hubungi.html">Hubungi</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="section-eyebrow">Joki tugas profesional ✦ terpercaya</p>
+            <h1>Deadline mepet? <span class="accent-teal">Serahkan ke kami.</span></h1>
+            <p class="lead">Kami membantu tugas sekolah dan kuliah dengan cepat, rapi, dan aman. Fokus pada hal penting, tugas biar kami yang urus.</p>
+            <div class="badge-row">
+              <span class="badge">✅ Tepat waktu</span>
+              <span class="badge">🔒 Rahasia terjaga</span>
+              <span class="badge">⭐ Kualitas tinggi</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-outline" href="layanan.html">Lihat layanan</a>
+            </div>
+          </div>
+          <aside class="card hero-card">
+            <div class="panel">
+              <img src="landing.png" alt="Ilustrasi joki tugas" class="hero-image" />
+            </div>
+            <div class="panel card home-service-box">
+              <strong class="mini-title">Layanan unggulan</strong>
+              <div class="service-grid home-service-mini">
+                <div class="service-card">PPT</div>
+                <div class="service-card">Makalah</div>
+                <div class="service-card">Website</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="container stat-grid">
+          <article class="stat-box"><strong>100+</strong> Tugas selesai</article>
+          <article class="stat-box"><strong>98%</strong> Klien puas</article>
+          <article class="stat-box"><strong>24/7</strong> Siap bantu</article>
+          <article class="stat-box"><strong>8+</strong> Jenis layanan</article>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <p class="section-eyebrow">Kenapa pilih kami</p>
+          <h2>Tugas bukan segalanya, tapi nilai kamu penting.</h2>
+          <p class="lead">Platform joki tugas yang mengutamakan kualitas, ketepatan waktu, dan privasi total.</p>
+          <div class="feature-grid feature-stack">
+            <article class="feature-card"><h3>Kualitas tinggi</h3><p class="lead">Dikerjakan oleh tenaga yang paham bidangnya dan rapi sesuai standar akademik.</p></article>
+            <article class="feature-card"><h3>Tepat waktu</h3><p class="lead">Kami menghargai deadline dan menyelesaikan tugas sebelum batas waktu yang disepakati.</p></article>
+            <article class="feature-card"><h3>100% rahasia</h3><p class="lead">Data dan identitas klien aman, tanpa penyebaran ke pihak lain.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-alt">
+        <div class="container">
+          <p class="section-eyebrow">Layanan unggulan</p>
+          <h2>Semua jenis tugas, kami bisa bantu.</h2>
+          <div class="service-marquee" aria-label="Layanan unggulan bergerak">
+            <div class="service-track">
+              <article class="service-marquee-card"><h3>Buat PPT</h3><p class="lead">Presentasi menarik dan profesional untuk tugas atau sidang.</p></article>
+              <article class="service-marquee-card"><h3>Buat Makalah</h3><p class="lead">Makalah lengkap, rapi, dan sesuai format akademik.</p></article>
+              <article class="service-marquee-card"><h3>Buat Jurnal</h3><p class="lead">Penulisan ilmiah dengan struktur yang benar dan rapi.</p></article>
+              <article class="service-marquee-card"><h3>Buat Website</h3><p class="lead">Landing page, portofolio, atau toko online sederhana.</p></article>
+              <article class="service-marquee-card"><h3>Kerjakan PR</h3><p class="lead">Solusi cepat untuk tugas sekolah dari SD sampai SMA.</p></article>
+              <article class="service-marquee-card"><h3>Laporan Praktikum</h3><p class="lead">Laporan hasil percobaan dengan analisis yang jelas.</p></article>
+              <article class="service-marquee-card"><h3>Buat PPT</h3><p class="lead">Presentasi menarik dan profesional untuk tugas atau sidang.</p></article>
+              <article class="service-marquee-card"><h3>Buat Makalah</h3><p class="lead">Makalah lengkap, rapi, dan sesuai format akademik.</p></article>
+              <article class="service-marquee-card"><h3>Buat Jurnal</h3><p class="lead">Penulisan ilmiah dengan struktur yang benar dan rapi.</p></article>
+              <article class="service-marquee-card"><h3>Buat Website</h3><p class="lead">Landing page, portofolio, atau toko online sederhana.</p></article>
+              <article class="service-marquee-card"><h3>Kerjakan PR</h3><p class="lead">Solusi cepat untuk tugas sekolah dari SD sampai SMA.</p></article>
+              <article class="service-marquee-card"><h3>Laporan Praktikum</h3><p class="lead">Laporan hasil percobaan dengan analisis yang jelas.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-title">TugasIn Aja</h3>
+          <p class="lead footer-copy">Platform joki tugas terpercaya, cepat, rapi, dan aman.</p>
+        </div>
+        <div>
+          <h3 class="footer-title">Navigasi</h3>
+          <p><a href="index.html">Beranda</a></p>
+          <p><a href="layanan.html">Layanan</a></p>
+          <p><a href="profil.html">Profil</a></p>
+          <p><a href="hubungi.html">Hubungi</a></p>
+        </div>
+        <div>
+          <h3 class="footer-title">Kontak</h3>
+          <p>📧 subagjaamar8@gmail.com</p>
+          <p>📱 0838-6627-3495</p>
+          <p>📷 @a.subagja.f</p>
+        </div>
+      </div>
+      <div class="container footer-note">© 2026 TugasIn Aja</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
